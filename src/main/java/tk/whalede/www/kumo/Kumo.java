@@ -2,6 +2,7 @@ package tk.whalede.www.kumo;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,6 +23,7 @@ import com.kennycason.kumo.CollisionMode;
 import com.kennycason.kumo.WordCloud;
 import com.kennycason.kumo.WordFrequency;
 import com.kennycason.kumo.bg.PixelBoundryBackground;
+import com.kennycason.kumo.font.KumoFont;
 import com.kennycason.kumo.font.scale.LinearFontScalar;
 import com.kennycason.kumo.nlp.FrequencyAnalyzer;
 import com.kennycason.kumo.palette.ColorPalette;
@@ -49,7 +51,11 @@ public class Kumo {
 	        wordCloud.setBackground(new PixelBoundryBackground(getInputStream("backgrounds/whale.png")));
 	        wordCloud.setColorPalette(new ColorPalette(new Color(0x4055F1), new Color(0x408DF1), new Color(0x40AAF1), new Color(0x40C5F1), new Color(0x40D3F1), new Color(0xFFFFFF)));
 	        wordCloud.setFontScalar(new LinearFontScalar(20, 50));
+	        
+	        wordCloud.setKumoFont(new KumoFont(new Font("ProggyClean",Font.BOLD,14)));
+	        
 	        wordCloud.build(wordFrequencies);
+	        
 	        BufferedImage img=wordCloud.getBufferedImage();
 	        System.out.println("리스트"+wordCloud);      
 	        

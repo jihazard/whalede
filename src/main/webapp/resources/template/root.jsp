@@ -27,15 +27,21 @@
     $(function(){
     	$("#loding").hide();
     	$("#searchbtn").click(function(){
+    		
     		var keyword=$("#keyword").val();
     	    var parm="keyword="+keyword;
-    		alert("클릭")
+    	    if(keyword==null || keyword==""){
+    	    	alert("키워드를 입력해주세요!");
+    	    	return;
+    	    }
+    	    
+    		
     		 $.ajax({
 				 url:"/whale/search.do",
 				 data:parm,
 				 success:function(data){
+					 
 					
-					 alert("성공")
 					 $("#wordimg").append("<img src=/output/cloud_"+keyword+".png />");
 				 },beforeSend:function(){
 				       

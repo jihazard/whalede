@@ -3,7 +3,7 @@
 
 <tiles-definitions>
     <definition name="content" template="/resources/template/root.jsp">
-         <put-attribute name="title" value="기본게시판" />
+         <put-attribute name="title" value="whalede" />
          <put-attribute name="header" value="/resources/template/header.jsp" />
          <put-attribute name="body" value="" />
          <put-attribute name="footer" value="/resources/template/footer.jsp" />
