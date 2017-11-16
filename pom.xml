@@ -58,13 +58,7 @@
     
 		
 		
-			 <!--ORACLE  -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc</artifactId>
-			<version>6.0</version>
-		</dependency>
-		
+	
 		 <!--jdbc  -->
 			<dependency>
 			<groupId>org.springframework</groupId>
