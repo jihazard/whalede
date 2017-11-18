@@ -6,7 +6,7 @@
 	<artifactId>www</artifactId>
 	<name>tk.whalede.www</name>
 	<packaging>war</packaging>
-	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<version>whalede</version>
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.1.7.RELEASE</org.springframework-version>
