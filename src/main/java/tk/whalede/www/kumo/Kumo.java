@@ -60,10 +60,10 @@ public class Kumo {
 	        System.out.println("리스트"+wordCloud);      
 	        
 	        
-	        ImageIO.write(img, "png", new File(docroot+"/cloud_"+keyword+".png"));
+	        ImageIO.write(img, "png", new File(docroot+"cloud_"+keyword+".png"));
 	        String msg="제작완료";
 	        System.out.println("제작완료");
-	        System.out.println(docroot+"/cloud_"+keyword+".png");
+	        System.out.println(docroot+"cloud_"+keyword+".png");
 	        String result="cloud_"+keyword+".png";
 	        
 	        return result;

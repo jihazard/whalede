@@ -42,7 +42,8 @@ public class whaleController {
 		logger.info("서치 호출"+key);
 		String sid=request.getRequestedSessionId();
 		logger.info("sid"+sid);
-		String docRoot=request.getServletContext().getRealPath("/output");
+		String docRoot=request.getServletContext().getRealPath("");
+		logger.info("위치 : "  +  docRoot);
 		//키워드 확인 
 		
 		String keyw = key;

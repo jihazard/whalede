@@ -42,7 +42,7 @@
 				 success:function(data){
 					 
 					
-					 $("#wordimg").append("<img src=/output/cloud_"+keyword+".png />");
+					 $("#wordimg").append("<img src=/cloud_"+keyword+".png />");
 				 },beforeSend:function(){
 				       
 					  $('.wrap-loading').removeClass('display-none');
